@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyle's game launcher</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="heheheha.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            color: white;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #9c00fc;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #7205b5;
+        }
+        .game-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between tiles */
+        }
+        .game-button {
+            background-color: #9c00fc;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 20px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 150px; /* Fixed width for buttons */
+            height: 100px; /* Fixed height for buttons */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Comic Neue', sans-serif; /* Ensure font applies to buttons */
+        }
+        .game-button:hover {
+            background-color: #7205b5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>kyle's game launcher</h1>
+    <h2>make sure to refresh every day to ensure it's updated</h2>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#game-launcher">Game Launcher</a>
+        <a href="https://forms.gle/N2GbHVUpFtjyJc5K6" target="_blank">Game Request</a>
+        <a href="soundboards.html">Soundboards</a> <!-- Link to the new soundboards page -->
+        <a href="TV-watching.html">TV</a>
+        <a href="https://kylethemusicguy.github.io/kylesmusicsite1/" target="_blank">Kyle's Music Site</a> <!--music site-->
+        <a href="https://kylethemusicguy.github.io/kylescopyrightissues/" target="_blank">!COPYRIGHT ISSUES!</a> 
+    </nav>
+
+    <!-- Game Launcher Section -->
+    <div id="game-launcher" class="game-container">
+    <button class="game-button" onclick="launchGame('https://playminigames.net/')">Play Mini Games</button>
+       <button class="game-button" onclick="launchGame('https://frivez.com/')">Frivez</button>
+       <button class="game-button" onclick="launchGame('https://sites.google.com/view/games-az/slope')">Slope</button>
+       <button class="game-button" onclick="launchGame('https://shsgames.github.io/#google_vignette')">SHS Games</button>
+       <button class="game-button" onclick="launchGame('https://leveldevil.io/')">Level Devil</button>
+       <button class="game-button" onclick="launchGame('https://weblfg.com/')">WebLFG</button>
+       <button class="game-button" onclick="launchGame('https://drifthunters2.io/')">Drift Hunters 2</button>
+       <button class="game-button" onclick="launchGame('https://experimonkey.com/')">Experimonkey</button>
+       <button class="game-button" onclick="launchGame('https://coolmathgames.com/')">Coolmath Games</button>
+       <button class="game-button" onclick="launchGame('https://emulatorgames.net/')">Emulator Games</button>
+       <button class="game-button" onclick="launchGame('https://arcadespot.com/')">Arcade Spot</button>
+       <button class="game-button" onclick="launchGame('https://fyregames.com/')">Fyre Games</button>
+       <button class="game-button" onclick="launchGame('https://retrobowl.me/')">Retro Bowl</button>
+       <button class="game-button" onclick="launchGame('https://thepizzaedition.github.io/g/tabs/')">Pizza Edition: TABS</button>
+       <button class="game-button" onclick="launchGame('https://krunker.io/?game=DAL:izsxh')">Krunker</button>
+       <button class="game-button" onclick="launchGame('https://dinoswords.gg/')">Dino Swords</button>
+       <button class="game-button" onclick="launchGame('https://slopeio.org/')">Slope.io</button>
+       <button class="game-button" onclick="launchGame('https://retrogames.cc/#google_vignette')">Retro Games</button>
+       <button class="game-button" onclick="launchGame('https://scratch.mit.edu/')">Scratch</button>
+       <button class="game-button" onclick="launchGame('https://games-and-stuff.vercel.app/')">Games & Stuff</button>
+       <button class="game-button" onclick="launchGame('https://warbot.io/')">Warbot.io</button>
+       <button class="game-button" onclick="launchGame('https://freetogame.com/')">Free To Game</button>
+       <button class="game-button" onclick="launchGame('https://buckshotroulette.com/build-now-gg')">Build Now GG</button>
+       <button class="game-button" onclick="launchGame('https://geometryspot.com/activities/')">Geometry Spot</button>
+       <button class="game-button" onclick="launchGame('https://scuffeduno.online/menu/main')">Scuffed Uno</button>
+       <button class="game-button" onclick="launchGame('https://thepizzaedition.github.io/all/')">All Pizza Edition Games</button>
+       <button class="game-button" onclick="launchGame('https://band.us/')">Band</button>
+       <button class="game-button" onclick="launchGame('https://iogames.onl/')">IO Games</button>
+       <button class="game-button" onclick="launchGame('https://slopeonline.online/')">Slope Online</button>
+       <button class="game-button" onclick="launchGame('https://geo-fs.com/geofs.php?v=3.82')">Geo-FS</button>
+       <button class="game-button" onclick="launchGame('https://stormyskitten.github.io/CookieClickerUnblocked')">Cookie Clicker</button>
+       <button class="game-button" onclick="launchGame('https://moto-x3m.net')">Moto X3M</button>
+       <button class="game-button" onclick="launchGame('https://eaglercraft.q13x.com/')">Eaglercraft</button>
+       <button class="game-button" onclick="launchGame('https://henrystickmin.io/infiltrating-the-airship')">infiltrating the Airship</button>
+       <button class="game-button" onclick="launchGame('https://universityequality.com/')">Roblox</button>
+    </div>
+
+    <script>
+        function launchGame(url) {
+            window.open(url, '_blank'); // Open game in a new tab
+        }
+    </script>
+</body>
+</html>
