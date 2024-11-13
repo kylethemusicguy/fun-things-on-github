@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kyle's soundboards</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="diddy.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Comic Neue', sans-serif;
+            text-align: center;
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1, h2 {
+            color: white;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 15px;
+            padding: 10px 20px;
+            background-color: #9c00fc;
+            border-radius: 5px;
+        }
+        nav a:hover {
+            background-color: #7205b5;
+        }
+        .soundboard-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px; /* Space between tiles */
+        }
+        .soundboard-button {
+            background-color: #9c00fc;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            padding: 20px 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 150px; /* Fixed width for buttons */
+            height: 100px; /* Fixed height for buttons */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-family: 'Comic Neue', sans-serif;
+        }
+        .soundboard-button:hover {
+            background-color: #7205b5;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>kyle's soundboards</h1>
+    <h2>Pick a soundboard and have fun!</h2>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Game Launcher</a> <!-- Back to the game launcher -->
+    </nav>
+
+    <!-- Soundboard Section -->
+    <div id="soundboards" class="soundboard-container">
+        <button class="soundboard-button" onclick="launchSoundboard('https://misdorg-my.sharepoint.com/:p:/r/personal/kott2862_student_misd_org/Documents/soundboard-2.pptx?d=we314cd9af1124a43bc095fbc140a54b1&csf=1&web=1&e=jQEng')">My Soundboard</button>
+        <button class="soundboard-button" onclick="launchSoundboard('https://thirtydollar.website')">Thirty Dollar Webiste</button>
+        <button class="soundboard-button" onclick="launchSoundboard('https://turtlegames.org/game/soundboard/')">Turtle Games Soundboard</button>
+    </div>
+
+    <script>
+        function launchSoundboard(url) {
+            window.open(url, '_blank'); // Open soundboard in a new tab
+        }
+    </script>
+</body>
+</html>
